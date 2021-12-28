@@ -1,6 +1,6 @@
 # Google Books CLI API App
 
-A command line application built using Node.js and npm (node package manager).
+A command line application built using Node.js and [npm](https://www.npmjs.com/) (node package manager).
 
 ## How to use
 
@@ -8,7 +8,7 @@ A command line application built using Node.js and npm (node package manager).
 
 `node index.js` will run this app. Follow the prompt to query for a book by entering its name.
 
-## [`npm`](https://www.npmjs.com/) Dependencies
+## Dependencies
 
 - [axios](https://www.npmjs.com/package/axios): HTTP client that returns a `Promise` object
 - [clear](https://www.npmjs.com/package/clear): Clears CLI
