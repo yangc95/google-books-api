@@ -17,7 +17,7 @@ A command line application built using Node.js and [npm](https://www.npmjs.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv): Loads privacy-sensitive variables from a `.env` file in the project enviornment
 - [figlet](https://www.npmjs.com/package/figlet): ASCII art in CLI from text
 - [inquirer](https://www.npmjs.com/package/inquirer): For an interactive CLI UI
-- [mocha] (https://mochajs.org/): Testing framework for JavaScript
+- [mocha](https://mochajs.org/): Testing framework for JavaScript
 
 ## MVP (minimum viable product)
 
