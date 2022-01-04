@@ -8,6 +8,8 @@ A command line application built using Node.js and [npm](https://www.npmjs.com/)
 
 `node index.js` will run this app. Follow the prompt to query for a book by entering its name.
 
+`npm test` will run the test(s) within the **test** folder.
+
 ## Dependencies
 
 - [axios](https://www.npmjs.com/package/axios): HTTP client that returns a `Promise` object
@@ -15,6 +17,7 @@ A command line application built using Node.js and [npm](https://www.npmjs.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv): Loads privacy-sensitive variables from a `.env` file in the project enviornment
 - [figlet](https://www.npmjs.com/package/figlet): ASCII art in CLI from text
 - [inquirer](https://www.npmjs.com/package/inquirer): For an interactive CLI UI
+- [mocha] (https://mochajs.org/): Testing framework for JavaScript
 
 ## MVP (minimum viable product)
 
