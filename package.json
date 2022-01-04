@@ -7,7 +7,7 @@
     "google-books": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "dotenv": "^10.0.0",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
   }
 }
