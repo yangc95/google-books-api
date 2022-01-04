@@ -1,9 +1,11 @@
 const printReadingList = (readingList) => {
-  console.log('Reading List\n');
+  console.log('Reading List\n============');
 
   readingList.map(book => {
     console.log(`${book.title} | ${book.author} | ${book.publisher}`)
   })
+
+  console.log('\n')
 };
 
 const addToReadingList = (readingList, book) => {
