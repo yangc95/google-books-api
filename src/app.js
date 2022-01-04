@@ -20,7 +20,12 @@ const main = async () => {
         await bookChoice(books)
           .then(bookObj => {
             const book = bookObj.book[0]
-            addToReadingList(readingList, book);
+            if (book) {
+              addToReadingList(readingList, book);
+            } else {
+              clear();
+              console.log('You did not add anything to your Reading List!\n Let\'s start again.\n');
+            }
           })
           .catch(error => {
             console.log(error)

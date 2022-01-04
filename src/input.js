@@ -49,15 +49,9 @@ const bookChoice = (books) => {
         type: 'checkbox',
         name: 'book',
         message: 'Pick the book you wish to add to your Reading List',
-        choices: books,
-        default: books[0],
-        validate: (value) => {
-          if (value.length) {
-            return true;
-          } else {
-            return 'Pick a book'
-          }
-        }
+        choices: books
+        // Previous validate key with callback was removed
+        // so user can proceed without choosing a book
       }
   ];
   return inquirer.prompt(questions)
