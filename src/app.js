@@ -2,10 +2,10 @@ const clear = require('clear');
 const { mainMenu, bookSearch, bookChoice } = require('./input');
 const { printReadingList, addToReadingList } = require('./reading_list');
 const { fetchBooks } = require('./api/books');
-const readingList = require('../reading_list.json');
 
 const main = async () => {
   let inUse = true;
+  let readingList = [];
 
   while (inUse) {
     const directory = await mainMenu();
@@ -31,6 +31,7 @@ const main = async () => {
             console.log(error)
           });
 
+        clear();
         break;
       case 'list':
         printReadingList(readingList);
