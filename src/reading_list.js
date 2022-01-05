@@ -1,11 +1,16 @@
 const printReadingList = (readingList) => {
   console.log('Reading List\n============');
 
-  readingList.map(book => {
-    console.log(`${book.title} | ${book.author} | ${book.publisher}`)
-  })
+  if (!readingList.length) {
+    console.log('No books added ... yet!')
+  } else {
+    readingList.map(book => {
+      console.log(`${book.title} | ${book.author} | ${book.publisher}`)
+    });
+  }
 
-  console.log('\n')
+
+  console.log('\n');
 };
 
 const addToReadingList = (readingList, book) => {
