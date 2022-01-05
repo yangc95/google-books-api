@@ -24,10 +24,12 @@ const main = async () => {
 
             if (length === 1) {
               addToReadingList(readingList, booksArray[0]);
+              clear();
             } else if (length > 1) {
               booksArray.forEach(book => {
                 addToReadingList(readingList, book)
               });
+              clear();
             } else {
               clear();
               console.log('You did not add anything to your Reading List!\n Let\'s start again.\n');
@@ -37,7 +39,6 @@ const main = async () => {
             console.log(error)
           });
 
-        clear();
         break;
       case 'list':
         printReadingList(readingList);
