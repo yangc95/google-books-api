@@ -9,10 +9,10 @@ const main = async () => {
 
   while (inUse) {
     const directory = await mainMenu();
-    const { action } = directory;
+    const { option } = directory;
     clear();
 
-    switch (action) {  
+    switch (option) {  
       case 'search':
         const search = await bookSearch();
         const books = await fetchBooks(search);

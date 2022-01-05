@@ -4,8 +4,8 @@ const mainMenu = () => {
   const menu = [
     {
       type: 'list',
-      name: 'action',
-      message: 'Pick one of the actions:',
+      name: 'option',
+      message: 'Pick from the options below:',
       choices: [
         { 
           name: 'Search for a book',
@@ -30,7 +30,7 @@ const bookSearch = () => {
     {
       type: 'input',
       name: 'search',
-      message: 'Search for a book by entering a keyword(s), i.e. "emma"',
+      message: 'Search for a book by entering a keyword(s), i.e. "emma":',
       validate: (value) => {
         if (value.length) {
           return true;
