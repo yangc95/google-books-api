@@ -2,10 +2,10 @@ const printReadingList = (readingList) => {
   console.log('Reading List\n============');
 
   if (!readingList.length) {
-    console.log('No books added ... yet!')
+    console.log('No books added ... yet!');
   } else {
     readingList.map(book => {
-      console.log(`${book.title} | ${book.author} | ${book.publisher}`)
+      console.log(`${book.title} | ${book.author} | ${book.publisher}`);
     });
   }
 

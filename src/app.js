@@ -18,10 +18,16 @@ const main = async () => {
         const books = await fetchBooks(search);
 
         await bookChoice(books)
-          .then(bookObj => {
-            const book = bookObj.book[0]
-            if (book) {
-              addToReadingList(readingList, book);
+          .then(booksObject => {
+            const booksArray = booksObject.book;
+            const length = booksArray.length;
+
+            if (length === 1) {
+              addToReadingList(readingList, booksArray[0]);
+            } else if (length > 1) {
+              booksArray.forEach(book => {
+                addToReadingList(readingList, book)
+              });
             } else {
               clear();
               console.log('You did not add anything to your Reading List!\n Let\'s start again.\n');
@@ -47,5 +53,5 @@ const main = async () => {
 };
 
 module.exports = {
-    main
+  main
 };
