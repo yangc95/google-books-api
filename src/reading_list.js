@@ -9,7 +9,6 @@ const printReadingList = (readingList) => {
     });
   }
 
-
   console.log('\n');
 };
 
