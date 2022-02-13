@@ -30,7 +30,7 @@ const bookSearch = () => {
     {
       type: 'input',
       name: 'search',
-      message: 'Search for a book by entering a keyword(s), i.e. "emma":',
+      message: 'Search for a book by entering a keyword(s), i.e. "tuck everlasting":',
       validate: (value) => {
         if (value.length) {
           return true;
